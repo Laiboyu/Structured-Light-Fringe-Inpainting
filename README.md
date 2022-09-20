@@ -5,9 +5,9 @@ In recent years, the gray code pattern structured light projection technology ha
 Python 3.8  
 PyTorch 1.10.1  
 tensorboard 2.8.0  
-torchvision 0.11.2
-numpy 1.21.2
-opencv-python 4.5.5.62
-Pillow 8.4.0
-scikit-image 0.14.0
+torchvision 0.11.2  
+numpy 1.21.2  
+opencv-python 4.5.5.62  
+Pillow 8.4.0  
+scikit-image 0.14.0  
 
