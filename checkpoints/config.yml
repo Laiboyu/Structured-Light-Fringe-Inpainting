@@ -1,0 +1,30 @@
+NAME: SL_Inpaint
+SEED: 10            # random seed
+GPU: [0]            # list of gpu ids
+VERBOSE: 0          # turns on verbose mode in the output console
+EPOCH: 100          # numbers of train epoch
+
+TENSORBOARD: ./checkpoints/logs/fit/SL_Inpainting
+
+TRAIN_FLIST_PATH:    ./datasets/structured_light/train
+VAL_FLIST_PATH:      ./datasets/structured_light/val
+TEST_FLIST_PATH:     ./datasets/test_data/object_(1)
+PREDICT_FLIST_PATH:  ./datasets/test_data/object_(2)
+
+LR: 0.0001                    # learning rate
+D2G_LR: 0.1                   # discriminator/generator learning rate ratio
+BETA1: 0.0                    # adam optimizer beta1
+BETA2: 0.9                    # adam optimizer beta2
+BATCH_SIZE: 1                 # input batch size for training
+INPUT_SIZE: 960               # input image size for training 0 for original size
+SIGMA: 1                      # standard deviation of the Gaussian filter used in Canny edge detector (0: random, -1: no edge)
+MAX_ITERS: 2e6                # maximum number of iterations to train the model
+
+EDGE_THRESHOLD: 0.5           # edge detection threshold
+L1_LOSS_WEIGHT: 1             # l1 loss weight
+FM_LOSS_WEIGHT: 10            # feature-matching loss weight
+
+GAN_LOSS: nsgan               # nsgan | lsgan | hinge
+
+SAMPLE_SIZE: 2               # number of images to sample
+LOG_INTERVAL: 10             # how many iterations to wait before logging training status (0: never)
