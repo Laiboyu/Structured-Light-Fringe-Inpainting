@@ -4,7 +4,8 @@ In recent years, the gray code pattern structured light projection technology ha
 
 ![image](https://github.com/Laiboyu/Structured-Light-Fringe-Inpainting/blob/main/src/imgs/img_1.png)
 
-## Required libraries
+## Network Flowplot
+![image](https://github.com/Laiboyu/Structured-Light-Fringe-Inpainting/blob/main/src/imgs/networks.png)
 ## Required libraries
 Python 3.8  
 PyTorch 1.10.1  
